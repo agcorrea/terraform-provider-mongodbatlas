@@ -24,8 +24,8 @@ resource "mongodbatlas_auditing" "test" {
 ## Argument Reference
 
 * `project_id` - (Required) The unique ID for the project to configure auditing.
-* `audit_filter` - Indicates whether the auditing system captures successful authentication attempts for audit filters using the "atype" : "authCheck" auditing event. For more information, see auditAuthorizationSuccess
-* `audit_authorization_success` - JSON-formatted audit filter used by the project
+* `audit_filter` - JSON-formatted audit filter used by the project
+* `audit_authorization_success` - Indicates whether the auditing system captures successful authentication attempts for audit filters using the "atype" : "authCheck" auditing event. For more information, see auditAuthorizationSuccess
 * `enabled` - Denotes whether or not the project associated with the {project_id} has database auditing enabled.
 
 ~> **NOTE:** Auditing created by API Keys must belong to an existing organization.
